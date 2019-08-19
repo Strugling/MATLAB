@@ -1,0 +1,8 @@
+查找某个字符串数组中是否存在特定的字符串，可以使用contains函数，返回与字符串数组大小相同的逻辑数组，对于字符串数组中的每个字符串，如果包含特定字符串，
+则为1，不包含在则为0。最后要判断整个字符串数组是否存在特定字符串，则用any函数对返回结果进行检验。
+clear;clc;
+cstr1 = ["Mercury","Gemini","Apollo";
+       "Skylab","Skylab B","ISS"];
+cstr2="ISS";
+finger = contains(cstr1,cstr2);
+isContain=any(finger);
